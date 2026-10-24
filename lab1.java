@@ -2,9 +2,9 @@ import static java.lang.Math.*;
 
 public class lab1{
 	
-	float[][] f2 = new float[7][18];
+	static float[][] f2 = new float[7][18];
 
-	public void main(String[] args){
+	public static void main(String[] args){
 		short[] f1={15, 13, 11, 9, 7, 5, 3};
 
 		float[] x = new float[18];
@@ -17,7 +17,7 @@ public class lab1{
 		output();
 	}
 	
-	public void element(short[] f1, float[] x){
+	public static void element(short[] f1, float[] x){
 		for(int i = 0; i < f2.length; i++){
 			for(int j = 0; j < f2[i].length; j++){
 				if(f1[i]==15){
@@ -34,7 +34,7 @@ public class lab1{
 			}
 		}
 	}
-	public void output(){
+	public static void output(){
 		for(int i = 0; i < f2.length; i++){
 			for(int j = 0; j < f2[i].length; j++){
 				System.out.printf("%.4f ", f2[i][j]);
